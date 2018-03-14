@@ -3,8 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>jQuery Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	
+	<div id="calculator">
+		<div id="inputContainer">
+			<input type="text" name="numOne" id="numOne" class="inputs" placeholder="Num One" />
+			<input type="text" name="numTwo" id="numTwo" class="inputs" placeholder="Num Two" />
+			<input type="text" name="answer" id="answer" class="inputs" placeholder="Answer" />
+		</div>
+		<div id="operatorContainer">
+			<button id="add" class="calcButton">+</button>
+			<button id="subtract" class="calcButton">-</button>
+			<button id="multiply" class="calcButton">X</button>
+			<button id="divide" class="calcButton">/</button>
+		</div>
+	</div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
