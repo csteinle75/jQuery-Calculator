@@ -9,7 +9,7 @@ body {
 	box-sizing: inherit;
 }
 
-input {
+input, button {
 	outline: none;
 }
 input:hover, button:hover{
@@ -19,9 +19,12 @@ button{
 	margin: 0;
 	padding: 0;
 }
+button:active {
+	background-color: #ddd;
+}
 
 #calculator {
-	height: 520px;
+
 	width: 420px;
 	background-color: #ccc;
 	margin: 100px auto 0;
