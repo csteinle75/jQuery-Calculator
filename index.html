@@ -6,19 +6,44 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<div id="calculator">
+
+	<div class="calcLabel"><span>Simple Calculator</span></div>
+	<div id="calculatorOne">
 		<div id="inputContainer">
 			<input type="text" name="numOne" id="numOne" class="inputs" placeholder="Num One" />
 			<input type="text" name="numTwo" id="numTwo" class="inputs" placeholder="Num Two" />
 			<input type="text" name="answer" id="answer" class="inputs" placeholder="Answer" readonly="" />
 		</div>
 		<div id="operatorContainer">
-			<button id="add" class="calcButton">+</button>
-			<button id="subtract" class="calcButton">-</button>
-			<button id="multiply" class="calcButton">X</button>
-			<button id="divide" class="calcButton">/</button>
+			<button id="addSimple" class="calcButton">+</button>
+			<button id="subtractSimple" class="calcButton">-</button>
+			<button id="multiplySimple" class="calcButton">X</button>
+			<button id="divideSimple" class="calcButton">/</button>
 		</div>
-	</div>
+	</div> <!--Simple Calc End -->
+
+	<div class="calcLabel"><span>Advanced Calculator</span></div>
+	<div id="calculatorTwo">
+		<button id="clear" class="numberButton">C</button>
+		<input type="text" name="result" id="result" readonly="" />
+		<button id="seven" class="numberButton">7</button>
+		<button id="eight" class="numberButton">8</button>
+		<button id="nine" class="numberButton">9</button>
+		<button id="divide" class="operatorButton">/</button>
+		<button id="four" class="numberButton">4</button>
+		<button id="five" class="numberButton">5</button>
+		<button id="six" class="numberButton">6</button>
+		<button id="multiply" class="operatorButton">X</button>
+		<button id="one" class="numberButton">1</button>
+		<button id="two" class="numberButton">2</button>
+		<button id="three" class="numberButton">3</button>
+		<button id="subtract" class="operatorButton">-</button>
+		<button id="zero" class="numberButton">0</button>
+		<button id="decimal" class="numberButton">.</button>
+		<button id="equal" class="numberButton">=</button>
+		<button id="add" class="operatorButton">+</button>
+	</div> <!-- Advanced Calc End -->
+
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

@@ -12,28 +12,33 @@ body {
 input, button {
 	outline: none;
 }
-input:hover, button:hover{
-	background-color: #f5f5f5;
-}
 button{
 	margin: 0;
 	padding: 0;
 }
-button:active {
-	background-color: #ddd;
+/* calculator one */
+.calcLabel {
+	margin: auto;
+	text-align: center;
+	font-size: 20px;
 }
-
-#calculator {
-
+#calculatorOne {
 	width: 420px;
 	background-color: #ccc;
-	margin: 100px auto 0;
+	margin: 100px auto 50px;
 	padding:10px;
 	border-radius: 5px;
 	display: flex;
 	flex-flow: column wrap
 }
 
+.inputs:hover, .calcButton:hover{
+	background-color: #f5f5f5;
+}
+
+.calcButton:active {
+	background-color: #ddd;
+}
 #inputContainer {
 	display: flex;
 	flex-flow: row wrap;
@@ -62,3 +67,39 @@ button:active {
 	margin: 5px;
 	border: 1px solid #555;
 }
+/*calculator two */
+#calculatorTwo {
+	width: 420px;
+	height: 520px;
+	background-color: #8C8;
+	margin: 100px auto 50px;
+	padding:10px;
+	border-radius: 5px;
+	font-size: 25px
+}
+#calculatorTwo * {
+	float: left;
+	border: .5px solid #bfb;
+	font-size: inherit;
+}
+#result {
+	width: 300px;
+	height: 100px;
+	padding: 0 10px;
+}
+.numberButton {
+	color: white;
+	background-color: #595;
+	width: 100px;
+	height: 100px;
+}
+.numberButton:hover{background-color: #484}
+.numberButton:active{background-color: #373}
+
+.operatorButton {
+	background-color: #8C8;
+	width: 100px;
+	height: 100px;
+}
+.operatorButton:hover{background-color: #7b7}
+.operatorButton:active{background-color: #6a6}
