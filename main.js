@@ -68,8 +68,11 @@ $(document).ready(function() {
 		result.val('cleared')
 	})
 	$('#decimal').on('click', function(){
-		console.log(value.indexOf('.'))
-
+		console.log(value.match(/\./gi))
+		if(value.match(/\./gi) === null){
+			value += '.'
+			result.val(value)
+		} else {return}
 	})
 	
 	$('#seven').on('click', function(){
